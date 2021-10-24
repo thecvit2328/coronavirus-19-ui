@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { HomePage } from './views';
 import './styles/index.scss';
 
-const App: React.FC = () => (
+const App: FC = () => (
   <div className="App">
     <React.Suspense fallback="...Loading">
       <HomePage />

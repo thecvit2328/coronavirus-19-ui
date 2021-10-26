@@ -1,0 +1,52 @@
+.statistics {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 300px auto;
+  grid-template-areas:
+    'country'
+    'covid19';
+  column-gap: 20px;
+  height: 100%;
+  color: $text_white;
+}
+.country {
+  grid-area: country;
+  background: $bg_bule;
+}
+
+.covid19 {
+  grid-area: covid19;
+  padding: 10px;
+  background-color: $bg_gray;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    box-sizing: border-box;
+    margin: 0px -10px;
+    color: $text_black;
+    .card {
+      @include item-flex(350px);
+      padding: 24px;
+      .card-body {
+        border-radius: 20px;
+        background-color: $bg_white;
+        padding: 16px;
+        height: 100%;
+        h3 {
+          font-size: 1.8rem;
+          margin-bottom: 0.5em;
+        }
+        .topic{
+          color: $text_gray;
+        }
+        .new_cases{
+          font-weight: bold;
+        }
+      }
+    }
+    
+  }
+}

@@ -1,2 +1,28 @@
-@import "App";
-@import "Layout";
+$bg_white: #ffffff;
+$bg_gray: #f7f8fa;
+$bg_bule: #727cf5;
+$text_black: #282c34;
+$text_white: #ffffff;
+$text_gray: #adadad;
+$text_green: #84C458;
+$text_red: #EB5176;
+$text_yellow: #FFCE4A;
+
+@mixin item-flex($itemWidth) {
+  box-sizing: border-box;
+  width: $itemWidth;
+}
+
+.success {
+  color: $text_green;
+}
+.warning {
+  color: $text_yellow;
+}
+.danger {
+  color: $text_red;
+}
+
+@import 'App';
+@import 'Layout';
+@import 'Covid19';

@@ -1,0 +1,9 @@
+{
+  "covid19": {
+    "population": "POPULATION",
+    "actived": "ACTIVED CASES",
+    "critical": "CRITICAL CASES",
+    "death": "DEATH"
+  },
+  "footer": { "content": "© Copyright 2021" }
+}
